@@ -1,0 +1,9 @@
+install:
+  - sudo chef-solo -j https://raw.github.com/hubdrop/scripts/master/attributes.json -r https://github.com/hubdrop/cookbooks/raw/master/chef-solo.tar.gz 
+
+script:
+  - wget http://localhost.localdomain/
+
+# configure notifications (email, IRC, campfire etc)
+notifications:
+  irc: "irc.freenode.net#hubdrop"
