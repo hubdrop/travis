@@ -1,5 +1,5 @@
 install:
-  - sudo `which chef-solo` -j https://raw.github.com/hubdrop/scripts/master/attributes.json -r https://github.com/hubdrop/cookbooks/raw/master/chef-solo.tar.gz 
+  - sudo chef-solo -j https://raw.github.com/hubdrop/scripts/master/attributes.json -r https://github.com/hubdrop/cookbooks/raw/master/chef-solo.tar.gz 
 
 script:
   - wget http://localhost.localdomain/
